@@ -1,0 +1,94 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Container for the entire app */
+#container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation bar styling */
+#navbar {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#navbar a:hover {
+  background-color: #555;
+}
+
+/* Main section that will contain the routed components */
+#main-section {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer styling */
+#footer {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#footer a:hover {
+  background-color: #555;
+}
+
+/* Styling for each page */
+.home, .red, .blue, .green, .yellow {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.home {
+  background-color: white;
+  color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
